@@ -8,7 +8,7 @@ exports.send = async (req, res) => {
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 587,
-        secure: true, // true for 465, false for other ports
+        secure: false, // true for 465, false for other ports
         auth: {
             user: "naorespondacede@gmail.com",
             pass: "C2e0d2e1"
