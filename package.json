@@ -2,9 +2,9 @@
   "name": "apiCede",
   "version": "1.0.0",
   "description": "",
-  "main": "nodemon index.js",
+  "main": "node index.js",
     "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",

@@ -26,12 +26,9 @@ exports.send = async (req, res) => {
             "\r\n\r\nPara responder à mensagem, envie um e-mail para " + req.body.email
     };
 
-    await transporter.sendMail(mailOptions, function (error, info) {
-        if (error) { return res.status(400) }
-        else { console.log(info); res.status(200) }
-    });
+    await transporter.sendMail(mailOptions).then(() => res.status(200));
 
-    // console.log(ret);
-    res.status(200);
+    // console.log(ret.response);
+
 
 }
